@@ -56,10 +56,10 @@ ElementType.METHOD
   - 增强类型
 - 方案
   - 写死代码
-  - 静态代理
-  - 动态代理
+  - 静态代理 XxxProxy
+  - 动态代理 DynamicProxy
     - JDK
-    - CGLib
+    - **CGLib**
   - Spring AOP
   - Spring AspectJ
     - 基于注解(@Aspect)
@@ -68,4 +68,4 @@ ElementType.METHOD
 ## REF
 
 - [huangyong/smart-framework](https://gitee.com/huangyong/smart-framework)
-https://my.oschina.net/huangyong/blog/158380
+- [huangyong/blog](https://my.oschina.net/huangyong/blog/158380)
