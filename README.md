@@ -1,5 +1,6 @@
 # java-study-code
 
+
 ## Servlet+JSP
 
 - [simple-framework](simple-framework/README.md)
@@ -7,6 +8,10 @@
 ## MVC
 
 - [smart-framework](smart-framework/README.md)
+
+## Maven
+
+- [maven-demo](maven-demo/README.md)
 
 ## BookList
 
