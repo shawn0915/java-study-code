@@ -1,0 +1,5 @@
+CREATE DATABASE test
+  DEFAULT CHARSET utf8
+  COLLATE utf8_general_ci;
+
+SHOW CREATE DATABASE test;

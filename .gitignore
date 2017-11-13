@@ -34,3 +34,6 @@ target/
 .classpath
 .project
 Servers/
+
+# macOS
+.DS_Store
