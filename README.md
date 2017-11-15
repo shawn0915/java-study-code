@@ -15,7 +15,7 @@
 
 ## Spring
 
-- [Spring Boot](common-service/README.md)
+- [Spring Boot](spring-boot-common/README.md)
 
 ## BookList
 
