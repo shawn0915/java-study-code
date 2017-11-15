@@ -16,7 +16,7 @@
   - spring-data
     - jpa (1.11.8)
     - jdbc
-    - mybatis (1.3.1)
+    - mybatis (3.4.5)
     - mysql (5.1.44)
     - mongodb (3.4.3)
     - redis (2.9.0)
@@ -28,4 +28,5 @@
   - mail
   - actuator
   - devtools
+  - logback (1.1.11)
 - druid (1.1.5)
