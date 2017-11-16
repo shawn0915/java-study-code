@@ -100,7 +100,7 @@ public class DatabaseHelper {
             Connection conn = getConnection();
             entityList = QUERY_RUNNER.query(conn, sql, new BeanListHandler<T>(entityClass), params);
         } catch (SQLException e) {
-            LOGGER.error("query entity list failure", e);
+            LOGGER.error("query domain list failure", e);
             throw new RuntimeException(e);
         } finally {
             closeConnection();
@@ -124,7 +124,7 @@ public class DatabaseHelper {
             // BeanHandler 返回Bean对象
             entity = QUERY_RUNNER.query(conn, sql, new BeanHandler<T>(entityClass), params);
         } catch (SQLException e) {
-            LOGGER.error("query entity list failure", e);
+            LOGGER.error("query domain list failure", e);
             throw new RuntimeException(e);
         } finally {
             closeConnection();
@@ -145,7 +145,7 @@ public class DatabaseHelper {
             Connection conn = getConnection();
             result = QUERY_RUNNER.query(conn, sql, new MapListHandler(), params);
         } catch (SQLException e) {
-            LOGGER.error("query entity list failure", e);
+            LOGGER.error("query domain list failure", e);
             throw new RuntimeException(e);
         } finally {
             closeConnection();
@@ -166,7 +166,7 @@ public class DatabaseHelper {
             Connection conn = getConnection();
             rows = QUERY_RUNNER.update(conn, sql, params);
         } catch (SQLException e) {
-            LOGGER.error("query entity list failure", e);
+            LOGGER.error("query domain list failure", e);
             throw new RuntimeException(e);
         } finally {
             closeConnection();
@@ -198,7 +198,7 @@ public class DatabaseHelper {
      */
     public static <T> boolean updateEntity(Class<T> entityClass, long id, Map<String, Object> fieldMap) {
         if (CollectionUtil.isEmpty(fieldMap.keySet())) {
-            LOGGER.error("can not update entity:fieldMap is empty");
+            LOGGER.error("can not update domain:fieldMap is empty");
             return false;
         }
         String sql = " update " + getTableName(entityClass) + " set ";
@@ -224,7 +224,7 @@ public class DatabaseHelper {
      */
     public static <T> boolean insertEntity(Class<T> entityClass, Map<String, Object> fieldMap) {
         if (CollectionUtil.isEmpty(fieldMap.keySet())) {
-            LOGGER.error("can not update entity:fieldMap is empty");
+            LOGGER.error("can not update domain:fieldMap is empty");
             return false;
         }
         String sql = " insert into " + getTableName(entityClass);

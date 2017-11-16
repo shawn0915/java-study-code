@@ -16,7 +16,8 @@
   - spring-data
     - jpa (1.11.8)
     - jdbc
-    - mybatis (3.4.5)
+    - mybatis-spring-boot-starter (1.3.1)
+      - mybatis (3.4.5)
     - mysql (5.1.44)
     - mongodb (3.4.3)
     - redis (2.9.0)
