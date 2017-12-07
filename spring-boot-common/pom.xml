@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>spring-boot-common</name>
-    <description>Demo project for Spring Boot.2017-11-15</description>
+    <description>Demo Project with Spring Boot.2017-11-15</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

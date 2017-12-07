@@ -31,3 +31,8 @@
   - devtools
   - logback (1.1.11)
 - druid (1.1.5)
+
+## bootstrap-3.3.7-dist
+
+`npm install bootstrap@3`
+
